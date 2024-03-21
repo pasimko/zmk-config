@@ -33,39 +33,39 @@
 
     keymap {
         compatible = "zmk,keymap";
-		layer_0 {
-			bindings = <
-				&kp Q  &kp W  &kp F  &kp P  &kp B        &kp J      &kp L  &kp U      &kp Y    &kp SEMI
-				&kp A  &kp R  &kp S  &kp T  &kp G        &kp M      &kp N  &kp E      &kp I    &kp O
-				&kp Z  &kp X  &kp C  &kp D  &kp V        &kp K      &kp H  &kp COMMA  &kp DOT  &kp FSLH
-				&mo 1  &kp LSHFT    &kp SPACE  &mo 2
-				>;
-		};
-
-		layer_1 {
-			bindings = <
-				&kp N1     &kp N2    &kp N3    &kp N4   &kp N5    &kp N6   &kp N7     &kp N8     &kp N9    &kp N0
-				&trans     &trans    &kp BSPC  &kp DEL  &trans    &kp SQT  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT
-				&kp LCTRL  &kp LGUI  &kp LALT  &trans   &trans    &trans   &kp GRAVE  &kp DOT    &kp DOT   &kp BSLH
-				&trans   &trans    &trans   &mo 3
-				>;
-		};
-
-		layer_2 {
-			bindings = <
-				&trans     &trans    &trans    &trans  &trans    &kp PG_UP  &trans    &kp UP    &trans     &trans
-				&trans     &trans    &trans    &trans  &trans    &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER
-				&kp LCTRL  &kp LGUI  &kp LALT  &trans  &trans    &trans     &kp HOME  &kp END   &trans     &trans
-				&mo 3   &trans    &trans     &trans
+		layer_0 {                                                  
+			bindings = <                                           
+				&kp Q      &kp W        &kp F       &kp P       &kp B           &kp J       &kp L       &kp U       &kp Y       &kp SEMI
+				&kp A      &kp R        &kp S       &kp T       &kp G           &kp M       &kp N       &kp E       &kp I       &kp O
+				&kp Z      &kp X        &kp C       &kp D       &kp V           &kp K       &kp H       &kp COMMA   &kp DOT     &kp FSLH
+				                                    &mo 1       &kp LSHFT       &kp SPACE   &mo 2               
+				>;                                                 
+		};                                                         
+                                                                   
+		layer_1 {                                                  
+			bindings = <                                           
+				&kp N1     &kp N2       &kp N3      &kp N4      &kp N5          &kp N6     &kp N7      &kp N8      &kp N9      &kp N0
+				&trans     &trans       &kp BSPC    &kp DEL     &trans          &kp SQT    &kp MINUS   &kp EQUAL   &kp LBKT    &kp RBKT
+				&kp LCTRL  &kp LGUI     &kp LALT    &trans      &trans          &trans     &kp GRAVE   &kp DOT     &kp DOT     &kp BSLH
+				                                    &trans      &trans          &trans     &mo 3                  
+				>;                                                 
+		};                                                         
+                                                                   
+		layer_2 {                                                  
+			bindings = <                                           
+				&kp ESC    &trans       &trans      &trans      &trans          &kp PG_UP  &trans      &kp UP      &trans      &trans
+				&kp TAB    &trans       &trans      &trans      &trans          &kp PG_DN  &kp LEFT    &kp DOWN    &kp RIGHT   &kp ENTER
+				&kp LCTRL  &kp LGUI     &kp LALT    &trans      &trans          &trans     &kp HOME    &kp END     &trans      &trans
+				                                    &mo 3       &trans          &trans     &trans
 				>;
 		};
 
 		layer_3 {
 			bindings = <
-				&kp F1  &kp F2   &kp F3   &kp F4   &trans    &trans  &trans                &trans        &trans           &trans
-				&kp F5  &kp F6   &kp F7   &kp F8   &trans    &trans  &kp C_BRIGHTNESS_DEC  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC
-				&kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &trans                &trans        &trans           &trans
-				&trans   &trans    &trans  &trans
+				&kp F1     &kp F2       &kp F3      &kp F4      &trans          &trans     &trans                &trans        &trans           &trans
+				&kp F5     &kp F6       &kp F7      &kp F8      &trans          &trans     &kp C_BRIGHTNESS_DEC  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC
+				&kp F9     &kp F10      &kp F11     &kp F12     &trans          &trans     &trans                &trans        &trans           &trans
+				                                    &trans      &trans          &trans     &trans
 				>;
 		};
 	};
